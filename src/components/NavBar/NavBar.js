@@ -1,9 +1,9 @@
 import React from "react";
 import Fab from "@material-ui/core/Fab";
-import Button from "@material-ui/core/Button";
 import HomeIcon from "@material-ui/icons/Home";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import PolicyIcon from "@material-ui/icons/Policy";
+import GavelIcon from '@material-ui/icons/Gavel';
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import styled from "styled-components";
 
@@ -26,6 +26,9 @@ const NavBar = () => (
         </Fab>
         <Fab color="secondary" aria-label="getapp">
             <GetAppIcon />
+        </Fab>
+        <Fab color="secondary" aria-label="rules">
+            <GavelIcon />
         </Fab>
         <Fab color="secondary" aria-label="policy">
             <PolicyIcon />
