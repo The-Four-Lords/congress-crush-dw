@@ -2,6 +2,7 @@
   "name": "congress-crush-dw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://the-four-lords.github.io/congress-crush-app/",
   "dependencies": {
     "marked": "^0.7.0",
     "react": "^16.10.2",

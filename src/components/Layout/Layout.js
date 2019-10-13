@@ -9,9 +9,9 @@ const Layout = () => (
   <Router>
     <NavBar />
     <Switch>
-      <Route path="/" exact component={AppInfo} />
-      <Route path="/rules" component={Rules} />
-      <Route path="/privacyPolicy" component={PrivacyPolicy} />
+      <Route path="/congress-crush-app/" exact component={AppInfo} />
+      <Route path="/congress-crush-app/rules" component={Rules} />
+      <Route path="/congress-crush-app/privacyPolicy" component={PrivacyPolicy} />
     </Switch>
     <span className="copyright">
       Made by{" "}
