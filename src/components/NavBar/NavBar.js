@@ -1,42 +1,36 @@
 import React from "react";
-import Fab from "@material-ui/core/Fab";
-import HomeIcon from "@material-ui/icons/Home";
-import GetAppIcon from "@material-ui/icons/GetApp";
-import PolicyIcon from "@material-ui/icons/Policy";
-import GavelIcon from '@material-ui/icons/Gavel';
-import ContactMailIcon from "@material-ui/icons/ContactMail";
-import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  padding: 15px;
+import TheFourLordsLogo from "../../assets/images/the_four_lords.png";
+import "./NavBar.css";
 
-  button {
-    margin: 0px 5px;
-  }
-`;
-
-const NavBar = () => (
-    <Wrapper>
-        <Fab color="secondary" aria-label="home">
-            <HomeIcon />
-        </Fab>
-        <Fab color="secondary" aria-label="getapp">
-            <GetAppIcon />
-        </Fab>
-        <Fab color="secondary" aria-label="rules">
-            <GavelIcon />
-        </Fab>
-        <Fab color="secondary" aria-label="policy">
-            <PolicyIcon />
-        </Fab>
-        <Fab color="secondary" aria-label="contact">
-            <ContactMailIcon />
-        </Fab>
-    </Wrapper>
-);
+const NavBar = () => {
+  return (
+    <header className="container">
+      <div className="logo">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/The-Four-Lords"
+        >
+          <img src={TheFourLordsLogo} alt="The Four Lords" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/rules">Reglas</Link>
+          </li>
+          <li className="highlight">
+            <Link to="/privacyPolicy">Politica de Privacidad</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default NavBar;

@@ -1,5 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 
-.App {
-  text-align: center;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    )
+    no-repeat right top rgb(34, 193, 195);
+  color: white;
+}
+
+.section-article {
+  background: rgb(0, 0, 0, 0.4);
+  border-radius: 50px;
+  padding: 1em 2em;
+  text-align: left;
+  font-size: 1.3em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.copyright {
+  float: right;
+  padding: 1em;
+}
+.copyright a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.copyright a:hover {
+  color: black;
+  text-shadow: 1px 1px 1px #fff;
 }

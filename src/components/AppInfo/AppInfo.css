@@ -1,0 +1,82 @@
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2em;
+  font-weight: 600;
+  max-width: 500px;
+  line-height: 1.8em;
+  margin: 3em auto;
+}
+
+.hero p:before {
+  content: "";
+  display: block;
+  width: 120px;
+  border: 2px solid rgba(253, 187, 45, 1);
+  margin: 1em auto;
+}
+
+.hero a {
+  padding: 1em 3em;
+  text-decoration: none;
+}
+
+.hero a img {
+  width: 200px;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  margin: 3em auto 0;
+  width: 400px;
+}
+
+@media screen and (min-width: 1020px) {
+  main {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .hero p {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0 0 3em 0;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .hero a img {
+    background: 200px;
+  }
+
+  .figure img {
+    width: 300px;
+    margin: 0;
+  }
+}
