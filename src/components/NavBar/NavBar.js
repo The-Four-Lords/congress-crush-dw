@@ -19,13 +19,13 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/congress-crush-app/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/congress-crush-app/rules">Reglas</Link>
+            <Link to="/rules">Reglas</Link>
           </li>
           <li className="highlight">
-            <Link to="/congress-crush-app/privacyPolicy">Politica de Privacidad</Link>
+            <Link to="/privacyPolicy">Politica de Privacidad</Link>
           </li>
         </ul>
       </nav>

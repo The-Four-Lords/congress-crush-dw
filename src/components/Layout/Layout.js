@@ -9,18 +9,18 @@ const Layout = () => (
   <Router>
     <NavBar />
     <Switch>
-      <Route path="/congress-crush-app/" exact component={AppInfo} />
-      <Route path="/congress-crush-app/rules" component={Rules} />
-      <Route path="/congress-crush-app/privacyPolicy" component={PrivacyPolicy} />
+      <Route path="/" exact component={AppInfo} />
+      <Route path="/rules" component={Rules} />
+      <Route path="/privacyPolicy" component={PrivacyPolicy} />
     </Switch>
     <span className="copyright">
       Made by{" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/KoshiroKun"
+        href="https://github.com/dastasoft"
       >
-        KoshiroKun
+        dastasoft
       </a>{" "}
       - 2019
     </span>

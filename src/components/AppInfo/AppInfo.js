@@ -13,13 +13,25 @@ const AppInfo = () => {
           conseguir 350 escaños. Consigue combinaciones y escucha las frases mas
           emblematicas de nuestros políticos.
         </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://play.google.com/store/apps/details?id=thefourlords.congressCrush"
-        >
-          <img src={GooglePlayApp} alt="App on Google Play" />
-        </a>
+        <div className="links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://play.google.com/store/apps/details?id=thefourlords.congressCrush"
+          >
+            <img src={GooglePlayApp} alt="App on Google Play" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://the-four-lords.github.io/congress-crush-web-v/"
+          >
+            <div className="web-promo">
+              <span>WEB VERSION</span>
+              <span></span>Play without installs
+            </div>
+          </a>
+        </div>
       </section>
       <figure>
         <img src={MobilePreview} alt="Mobile preview" />
